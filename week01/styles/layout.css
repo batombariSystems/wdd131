@@ -1,77 +1,47 @@
-/* layout.css */
-
-/* Reset default spacing */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body styling */
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-}
-
-/* Container holds the whole layout */
-.container {
-  width: 90%;
-  max-width: 1000px;
-  display: grid;
-  grid-template-rows: auto auto 1fr auto;
 }
 
 /* Header */
 header {
-  background-color: #222;
-  color: white;
-  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #f2f2f2;
 }
 
 /* Navigation */
-nav {
-  background-color: #111;
-  padding: 15px;
-  display: flex;
-  justify-content: space-around;
-}
-
 nav a {
-  color: white;
+  margin: 0 10px;
   text-decoration: none;
-  font-weight: bold;
+  color: black;
 }
 
-nav a:hover {
-  color: orange;
+/* Main layout */
+.container {
+  display: flex;
+  min-height: 400px;
 }
 
-/* Main and Aside layout */
-.main-layout {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  min-height: 300px;
+/* Sidebars */
+.left, .right {
+  width: 20%;
+  background-color: #ddd;
+  padding: 10px;
 }
 
 /* Main content */
 main {
-  background-color: #e6e6e6;
-  padding: 20px;
-}
-
-/* Aside content */
-aside {
-  background-color: #f2f2f2;
-  padding: 20px;
+  width: 60%;
+  padding: 10px;
+  background-color: #eee;
 }
 
 /* Footer */
 footer {
-  background-color: #222;
-  color: white;
   text-align: center;
-  padding: 25px;
+  padding: 10px;
+  background-color: #f2f2f2;
 }
