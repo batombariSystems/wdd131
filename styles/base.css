@@ -3,8 +3,7 @@
    Batombari Nyienakuna
    ============================== */
 
-/* Google Fonts Import (example) */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 
 :root {
   --primary-color: #1f4d6b;
@@ -25,7 +24,7 @@
 
 /* Body */
 body {
-  font-family: var(--body-font);
+  font-family: "Roboto", sans-serif;
   background-color: var(--light-bg);
   color: #222;
   line-height: 1.6;
