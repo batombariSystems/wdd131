@@ -117,6 +117,39 @@ main h1 {
   display: block;
   margin: 1rem auto;
   border-radius: 6px;
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+.about-content p {
+  flex: 2;
+}
+.profile-image {
+  width: 160px;
+  border-radius: 6px;
+}
+.country-title {
+  text-align: centre;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ccc;
+  margin: 0 1rem;
+}
+.country-content {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  align-items: center;
+}
+.flag-img {
+  width: 150px;
+  border: 1px solid #ccc;
+}
 }
 
 /* Footer */
