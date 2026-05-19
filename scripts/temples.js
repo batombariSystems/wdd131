@@ -1,10 +1,10 @@
-// Copyright year
+// Footer year
 const year = document.querySelector("#currentyear");
 year.textContent = new Date().getFullYear();
 
 // Last modified
-const lastModified = document.querySelector("#lastModified");
-lastModified.textContent = `Last Modification: ${document.lastModified}`;
+const modified = document.querySelector("#lastModified");
+modified.textContent = `Last Modification: ${document.lastModified}`;
 
 // Hamburger menu
 const hamButton = document.querySelector("#menu");
