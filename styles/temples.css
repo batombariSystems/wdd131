@@ -1,0 +1,108 @@
+/* temples.css - Mobile First */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+  --primary: #1d3557;
+  --secondary: #457b9d;
+  --light: #f1faee;
+  --accent: #e63946;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--light);
+  color: var(--primary);
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background-color: var(--primary);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+/* NAV */
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  background-color: var(--secondary);
+  color: white;
+  padding: 0.7rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: var(--accent);
+}
+
+/* MAIN */
+main {
+  padding: 1rem;
+}
+
+main h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+/* FIGURE GRID */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+figure {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+figcaption {
+  padding: 0.7rem;
+  font-weight: 600;
+  background-color: var(--secondary);
+  color: white;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
