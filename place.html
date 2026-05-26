@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Batombari Nyienakuna">
+    <meta name="description" content="Place page assignment">
+
+    <title>Place Page - Madagascar</title>
+
+    <link rel="stylesheet" href="place.css">
+    <script src="place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Madagascar</h1>
+    </header>
+
+    <main>
+
+        <!-- HERO IMAGE -->
+        <section class="hero">
+            <picture>
+                <source srcset="images/madagascar-large.webp" media="(min-width: 768px)">
+                <img src="images/madagascar-small.webp"
+                     alt="Lemur in Madagascar"
+                     width="800"
+                     height="500">
+            </picture>
+        </section>
+
+        <!-- DATA SECTION -->
+        <section class="card data">
+            <h2>Data</h2>
+
+            <ul>
+                <li><strong>Area:</strong> 587,041 sq km</li>
+                <li><strong>Population:</strong> 30,325,732</li>
+                <li><strong>Capital:</strong> Antananarivo</li>
+                <li><strong>Languages:</strong> Malagasy, French</li>
+                <li><strong>Currency:</strong> Ariary</li>
+                <li><strong>Time Zone:</strong> UTC +3</li>
+                <li><strong>Calling Code:</strong> +261</li>
+                <li><strong>Internet TLD:</strong> .mg</li>
+            </ul>
+        </section>
+
+        <!-- WEATHER SECTION -->
+        <section class="card weather">
+            <h2>
+                Weather
+                <span class="weather-icon">⛅</span>
+            </h2>
+
+            <ul>
+                <li><strong>Temperature:</strong> <span id="temp">26</span>°C</li>
+                <li><strong>Conditions:</strong> Sunny</li>
+                <li><strong>Wind:</strong> <span id="windSpeed">10</span> km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="windChill"></span></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> | Batombari Nyienakuna | Nigeria
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
