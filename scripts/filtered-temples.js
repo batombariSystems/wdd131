@@ -134,4 +134,68 @@ function displayTemples(temples) {
 }
 
 // Display all temples
-displayTemples(temples);
+displayTemples(temples);// Navigation links
+const homeLink = document.querySelector("a[href='#']:nth-of-type(1)");
+const oldLink = document.querySelector("a[href='#']:nth-of-type(2)");
+const newLink = document.querySelector("a[href='#']:nth-of-type(3)");
+const largeLink = document.querySelector("a[href='#']:nth-of-type(4)");
+const smallLink = document.querySelector("a[href='#']:nth-of-type(5)");
+
+const pageTitle = document.querySelector("main h2");
+
+// Home
+homeLink.addEventListener("click", () => {
+  pageTitle.textContent = "Home";
+  templeGrid.innerHTML = "";
+  displayTemples(temples);
+});
+
+// Old - before 1900
+oldLink.addEventListener("click", () => {
+  pageTitle.textContent = "Old Temples";
+  templeGrid.innerHTML = "";
+
+  const oldTemples = temples.filter((temple) => {
+    const year = parseInt(temple.dedicated.split(",")[0]);
+    return year < 1900;
+  });
+
+  displayTemples(oldTemples);
+});
+
+// New - after 2000
+newLink.addEventListener("click", () => {
+  pageTitle.textContent = "New Temples";
+  templeGrid.innerHTML = "";
+
+  const newTemples = temples.filter((temple) => {
+    const year = parseInt(temple.dedicated.split(",")[0]);
+    return year > 2000;
+  });
+
+  displayTemples(newTemples);
+});
+
+// Large - over 90,000 sq ft
+largeLink.addEventListener("click", () => {
+  pageTitle.textContent = "Large Temples";
+  templeGrid.innerHTML = "";
+
+  const largeTemples = temples.filter(
+    (temple) => temple.area > 90000
+  );
+
+  displayTemples(largeTemples);
+});
+
+// Small - under 10,000 sq ft
+smallLink.addEventListener("click", () => {
+  pageTitle.textContent = "Small Temples";
+  templeGrid.innerHTML = "";
+
+  const smallTemples = temples.filter(
+    (temple) => temple.area < 10000
+  );
+
+  displayTemples(smallTemples);
+});
