@@ -167,8 +167,6 @@ margin-top: 2rem;
 
 /* Responsive Layout */
 @media screen and (min-width: 768px) {
-
-
 nav ul {
     flex-direction: row;
     justify-content: center;
@@ -182,4 +180,5 @@ nav ul {
 .box {
     margin-bottom: 0;
 }
+
 }
