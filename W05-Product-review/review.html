@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/review.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>Review Submitted</h1>
+</header>
+
+<main class="confirmation">
+    <h2>Thank You!</h2>
+
+    <p>Your review has been submitted successfully.</p>
+
+    <p>Total Reviews Submitted:
+        <strong id="review-count"></strong>
+    </p>
+</main>
+
+<footer>
+    <p>&copy; <span id="currentyear"></span> 🌺 Your Name 🌺 Madagascar</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+</footer>
+
+<script>
+document.querySelector("#currentyear").textContent = new Date().getFullYear();
+document.querySelector("#lastModified").textContent = document.lastModified;
+</script>
+
+</body>
+</html>
