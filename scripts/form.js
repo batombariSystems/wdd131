@@ -35,4 +35,5 @@ products.forEach(product => {
     option.textContent = product.name;
 
     productSelect.appendChild(option);
+
 });
